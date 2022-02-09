@@ -15,18 +15,20 @@
     margin-right: 20px
 
   .about
-    &-title__item
+    &__title
       font-size: 3.75em
 
   .product
-    &-title
+    &__title
       font-size: 2.375em
-      line-height: 1
     &__site-navigation
       display: flex
       flex-direction: column
       height: 350px
       width: 100%
+
+  .hidden-mobile
+    display: none
 
 @media (max-width: 1000px)
   .header
@@ -42,9 +44,30 @@
       justify-content: space-between
       margin-top: 30px
 
+  .product
+    padding-bottom: 120px
+
+  .hidden-desktop
+    display: flex
+
+  .footer
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #F6F5E9
+    border-top: 2px solid #333333
+    &-nav
+      margin: auto
+      padding-top: 20px
+      padding-bottom: 20px
+      width: 150px
+      display: flex
+      justify-content: space-between
+
 @media (max-width: 900px)
   .about
-    &-title__item
+    &__title
       font-size: 3.4375em
       line-height: 1
       text-align: left
@@ -52,15 +75,13 @@
     &-title
       font-size: 1.875em
 
-@media (max-width: 790px)
+  @media (max-width: 400px)
   .about
-    &-title__item
-      top: -118px
-      left: 66%
-@media (max-width: 550px)
-  .about
-    &-title__item
+    &__title
       font-size: 2em
-      left: 54%
-    &-img
-      width: 100%
+
+  .product
+    &-title
+      font-size: 1.7em
+    &__site-navigation
+      height: 370px

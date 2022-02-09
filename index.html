@@ -64,15 +64,13 @@
   <main class="main">
     <section class="about">
       <div class="container">
-        <ul class="about__description description">
-          <li class="description__item about-img">
-            <img class="about-img__item" src="./img/david-4660056.jpg" alt="Фото">
-          </li>
-          <li class="description__item about-title">
-            <h1 class="about-title__item">FRONTEND - РАЗРАБОТЧИК</h1>
-          </li>
-        </ul>
-        <div class="about__site-navigation">
+        <h1 class="about__title">FRONTENTD - РАЗРАБОТЧИК
+        </h1>
+      </div>
+    </section>
+    <section class="mobile-navigation">
+      <div class="container">
+        <div class="mobile-navigation__site-navigation">
           <div class="site-navigation">
             <div class="circle circle__theme-light"></div>
             <ul class="site-navigation__list">
@@ -86,7 +84,7 @@
             </ul>
           </div>
           <!-- site-navigation -->
-          <div class="site-navigation">
+          <div id="contacts" class="site-navigation">
             <div class="circle circle__theme-light"></div>
             <ul class="site-navigation__list">
               <li class="site-navigation__item site-navigation__theme-light">Связаться</li>
@@ -112,10 +110,9 @@
           </div>
           <!-- site-navigation -->
         </div>
-
       </div>
     </section>
-    <section class="product">
+    <section id="product" class="product">
       <div class="container">
         <div class="product__block">
           <h1 class="product-title">
@@ -123,7 +120,7 @@
           </h1>
           <div class="product__site-navigation">
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Задачи</li>
                 <li class="site-navigation__item">плавная прокрутка вверх по клику</li>
@@ -138,7 +135,7 @@
             </div>
             <!-- site-navigation -->
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Инструменты</li>
                 <li class="site-navigation__item">HTML | CSS</li>
@@ -172,7 +169,7 @@
           </h1>
           <div class="product__site-navigation">
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Задачи</li>
                 <li class="site-navigation__item">плавная прокрутка вверх по клику</li>
@@ -187,7 +184,7 @@
             </div>
             <!-- site-navigation -->
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Инструменты</li>
                 <li class="site-navigation__item">HTML | CSS</li>
@@ -221,7 +218,7 @@
           </h1>
           <div class="product__site-navigation">
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Задачи</li>
                 <li class="site-navigation__item">плавная прокрутка вверх по клику</li>
@@ -236,7 +233,7 @@
             </div>
             <!-- site-navigation -->
             <div class="site-navigation">
-              <div class="circle"></div>
+              <div class="circle hidden-mobile"></div>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__theme-dark">Инструменты</li>
                 <li class="site-navigation__item">HTML | CSS</li>
@@ -264,6 +261,17 @@
       </div>
     </section>
   </main>
+  <footer class="footer hidden-desktop">
+    <ul class="product-nav footer-nav">
+      <li class="product-nav__item">
+        <a href="#product" class="product-nav__link">код</a>
+      </li>
+      <li class="product-nav__item">
+        <a href="#contacts" class="product-nav__link">связаться</a>
+      </li>
+
+    </ul>
+  </footer>
 </body>
 
 </html>
