@@ -8,7 +8,7 @@
 
 - HTML | CSS | SASS | SCSS
 - Flexbox | Grid | Pixel Perfect
-- JavaScript | JSON | AJAX
+- JavaScript | JSON | AJAX | React
 - Англискй pre-intermediate | Немецкий В1
 - HTTP-методы
 - Figma, Ps
