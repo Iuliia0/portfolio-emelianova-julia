@@ -280,10 +280,13 @@ button {
   background-color: #434341;
   padding-top: 70px;
   padding-bottom: 70px;
+<<<<<<< HEAD
   background-image: url("../img/DSCF1326-2.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 800px;
+=======
+>>>>>>> main
 }
 .about__title {
   display: -webkit-box;
@@ -296,7 +299,10 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+<<<<<<< HEAD
   height: 600px;
+=======
+>>>>>>> main
   font-size: 4.75em;
   line-height: 1;
   font-weight: normal;
