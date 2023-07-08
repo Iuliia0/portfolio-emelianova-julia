@@ -1,0 +1,34 @@
+.header
+  padding-top: 60px
+  padding-bottom: 60px
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-info
+    &__about
+      display: flex
+      width: 773px
+      justify-content: space-between
+  & .circle
+    margin-right: 20px
+    &__theme-light
+      background-color: $white
+
+.about
+  display: flex
+  &__item
+    color: $theme-light
+    &:first-child
+      color: $theme-dark
+      margin-bottom: 15px
+      text-transform: uppercase
+      display: block
+      text-align: left
+  &__link
+    text-decoration: none
+    color: $theme-light
+  &__theme-dark
+    color: $theme-dark
+  &__theme-light
+    color: $white
