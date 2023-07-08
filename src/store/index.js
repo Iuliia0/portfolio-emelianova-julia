@@ -19,12 +19,14 @@ export default createStore({
       { type: 'link', item: 'Telegram', link: 'https://t.me/jul55' },
     ],
 
-    startDate: '2021-01-16',
-
     experience: [
       { type: 'text', item: 'КОММЕРЧЕСКИЙ ОПЫТ' },
       { type: 'text', item: 'AISA IT Сервис' },
     ],
+
+    startDate: '2021-01-16',
+
+    workPosition: 'Frontend-разработчик'
   },
   getters: {
     calculateExperience(state) {

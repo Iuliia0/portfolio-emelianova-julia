@@ -1,27 +1,20 @@
 <template lang="">
-  <header class="header">
-    <div class="container">
-      <nav class="header-info header__info">
-        <div class="header-info__about">
+  <div class="work-position">
+      <div class="container">
+        <h1 class="work-position__title">{{ $store.state.workPosition }}
+        </h1>
 
-          <HeaderItem 
+        <HeaderItem 
             :array="skills" 
-            color="default"/>
+            color="light"/>
           <HeaderItem 
             :array="contacts" 
-            :color="'default'"/>
+            :color="'light'"/>
           <HeaderItem 
             :array="experience" 
-            color="default"/>
-
-        </div>
-        <div class="header-info__logo">
-          <img src="../assets/img/logo.svg" alt="Emelianova Julia" class="logo">
-        </div>
-      </nav>
-
-    </div>
-  </header>
+            color="light"/>
+      </div>
+  </div>
 </template>
 <script>
 import { useStore } from 'vuex';
@@ -38,7 +31,7 @@ export default {
     }
   },
   components: {
-    HeaderItem,
+    HeaderItem
   }
 }
 </script>

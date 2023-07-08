@@ -6,6 +6,7 @@ import { useStore } from 'vuex';
       <li 
         v-for="item in list"
         class="about__item"
+        :class="color"
         >
         <span 
           v-if="item.type === 'text'">
@@ -30,13 +31,16 @@ import { onBeforeMount } from 'vue';
 import { useStore } from 'vuex';
 
   export default {
-    props: ['array'],
+    props: ['array', 'color'],
     setup(props) {
       const store = useStore()
+
+      const color = `about__color-${props.color}`
 
       onBeforeMount(() => store.getters.calculateExperience)
 
       return {
+        color: color,
         list: props.array
       }
     }
