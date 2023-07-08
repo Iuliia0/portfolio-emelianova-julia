@@ -1,3 +1,4 @@
+import { useStore } from 'vuex';
 <template lang="">
   <div class="about">
     <div class="circle"></div>
@@ -25,9 +26,16 @@
   </div>
 </template>
 <script>
+import { onBeforeMount } from 'vue';
+import { useStore } from 'vuex';
+
   export default {
     props: ['array'],
     setup(props) {
+      const store = useStore()
+
+      onBeforeMount(() => store.getters.calculateExperience)
+
       return {
         list: props.array
       }

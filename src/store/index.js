@@ -19,16 +19,33 @@ export default createStore({
       { type: 'link', item: 'Telegram', link: 'https://t.me/jul55' },
     ],
 
+    startDate: '2021-01-16',
+
     experience: [
       { type: 'text', item: 'КОММЕРЧЕСКИЙ ОПЫТ' },
-      { type: 'text', item: 'ISA IT Сервис - 1 год 1 месяц' },
+      { type: 'text', item: 'AISA IT Сервис' },
     ],
   },
   getters: {
+    calculateExperience(state) {
+      const today = new Date();
+      const start = new Date(state.startDate);
+
+      const diff = today - start;
+
+      const millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25; // Учитываем високосные годы
+      const years = Math.floor(diff / millisecondsInYear);
+
+      const millisecondsInMonth = 1000 * 60 * 60 * 24 * 30.44; // Средняя продолжительность месяца
+      const months = Math.floor((diff % millisecondsInYear) / millisecondsInMonth);
+
+      return state.experience[1].item = `${state.experience[1].item} - ${years} год ${months} месяцев`;
+    }
   },
   mutations: {
   },
   actions: {
+
   },
   modules: {
   }
