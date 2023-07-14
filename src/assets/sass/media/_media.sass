@@ -12,9 +12,9 @@
       margin-left: 10px
 
   .circle
-    margin-right: 20px
+    margin-right: 10px
 
-  .about
+  .work-position
     &__title
       font-size: 3.75em
 
@@ -40,6 +40,15 @@
       &__about
         display: none
 
+  .about
+    &__item
+      &:first-child
+        color: $white
+
+  .work-position
+    &__about
+      margin-top: 30px
+
   .product
     padding-bottom: 120px
 
@@ -62,17 +71,19 @@
       justify-content: space-between
 
 @media (max-width: 900px)
-  .about
+  .work-position
     &__title
       font-size: 3.4375em
       line-height: 1
       text-align: left
+
   .product
     &-title
       font-size: 1.875em
 
-@media (max-width: 400px)
-  .about
+
+@media (max-width: 440px)
+  .work-position
     &__title
       font-size: 2em
 

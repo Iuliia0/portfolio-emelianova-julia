@@ -6,13 +6,19 @@
 
           <HeaderItem 
             :array="skills" 
-            color="default"/>
+            color="default"
+            headerColor="dark"
+            circleColor="dark"/>
           <HeaderItem 
             :array="contacts" 
-            :color="'default'"/>
+            color="default"
+            headerColor="dark"
+            circleColor="dark"/>
           <HeaderItem 
             :array="experience" 
-            color="default"/>
+            color="default"
+            headerColor="dark"
+            circleColor="dark"/>
 
         </div>
         <div class="header-info__logo">
@@ -25,7 +31,7 @@
 </template>
 <script>
 import { useStore } from 'vuex';
-import HeaderItem from './HeaderItem.vue';
+import HeaderItem from './AboutItem.vue';
 
 export default {
   setup() {

@@ -4,21 +4,30 @@
         <h1 class="work-position__title">{{ $store.state.workPosition }}
         </h1>
 
-        <HeaderItem 
+        <div class="work-position__about hidden-desktop">
+          <HeaderItem 
             :array="skills" 
-            color="light"/>
+            color="light"
+            headerColor="light"
+            circleColor="light"/>
           <HeaderItem 
             :array="contacts" 
-            :color="'light'"/>
+            color="light"
+            headerColor="light"
+            circleColor="light"/>
           <HeaderItem 
             :array="experience" 
-            color="light"/>
+            color="light"
+            headerColor="light"
+            circleColor="light"/>
+        </div>
+
       </div>
   </div>
 </template>
 <script>
 import { useStore } from 'vuex';
-import HeaderItem from './HeaderItem.vue';
+import HeaderItem from './AboutItem.vue';
 
 export default {
   setup() {

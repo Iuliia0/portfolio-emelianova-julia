@@ -24,6 +24,25 @@ export default createStore({
       { type: 'text', item: 'AISA IT Сервис' },
     ],
 
+    projects: [
+      { 
+        type: 'commerce', 
+        title: 'карта жителя Ямала', 
+        tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
+        tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
+        git: null,
+        linkToProject: 'https://ek.yanao.ru/'
+      },
+      { 
+        type: 'commerce', 
+        title: 'карта жителя Омска', 
+        tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
+        tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
+        git: null,
+        linkToProject: 'https://ek.yanao.ru/'
+      },
+    ],
+
     startDate: '2021-01-16',
 
     workPosition: 'Frontend-разработчик'
