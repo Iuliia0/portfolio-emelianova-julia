@@ -183,6 +183,10 @@ td, th {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #F6F5E9;
@@ -322,6 +326,7 @@ button {
 }
 .product-nav__link {
   text-decoration: none;
+  color: #333333;
 }
 .product-nav__text {
   text-decoration: none;

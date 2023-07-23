@@ -25,11 +25,11 @@
           </div>
           <ul class="product-nav">
             <li class="product-nav__item">
-              <a v-if="project.git" href="{{ project.git }}" class="product-nav__link" target="blank">
+              <a v-if="project.git" :href="project.git" class="product-nav__link" target="blank">
                 <span class="product-nav__text">git</span>
                 <img class="product-nav__img" src="../assets/img/arrow.svg" alt="Arrow">
               </a>
-              <a href="{{project.linkToProject }}" class="product-nav__link" target="blank">
+              <a :href="project.linkToProject" class="product-nav__link" target="blank">
                 <span class="product-nav__text">page</span>
                 <img class="product-nav__img" src="../assets/img/arrow.svg" alt="Arrow">
               </a>

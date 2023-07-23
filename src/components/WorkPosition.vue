@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="work-position">
+  <div class="work-position" id="workPosition">
       <div class="container">
         <h1 class="work-position__title">{{ $store.state.workPosition }}
         </h1>
