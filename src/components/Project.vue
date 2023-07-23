@@ -1,40 +1,38 @@
 <template lang="">
     <section id="product" class="product">
       <div class="container">
-        <div class="product__block">
+        <div class="product__block" v-for="project in projects" :key="project.id">
           <h1 class="product-title">
-            коммерческий сайт | <span class="product-title__color-light">карта жителя Ямала</span>
+            {{ project.type }} | <span class="product-title__color-light">{{ project.title }}</span>
           </h1>
           <div class="product__site-navigation">
             <div class="site-navigation">
               <div class="circle hidden-mobile"></div>
+              <h4>Задачи</h4>
               <ul class="site-navigation__list">
-                <li class="site-navigation__item site-navigation__color-dark">Задачи</li>
-                <li class="site-navigation__item">вёрстка сайта</li>
-                <li class="site-navigation__item">адаптив</li>
-                <li class="site-navigation__item">реализовать версию для слабовидящих
-                </li>
+                <li class="site-navigation__item site-navigation__color-dark" v-for="task in project.tasks">{{ task }}</li>
               </ul>
             </div>
             <!-- site-navigation -->
             <div class="site-navigation">
               <div class="circle hidden-mobile"></div>
+              <h4>Инстурменты</h4>
               <ul class="site-navigation__list">
-                <li class="site-navigation__item site-navigation__color-dark">Инструменты</li>
-                <li class="site-navigation__item">HTML | CSS</li>
-                <li class="site-navigation__item">Java Script</li>
-                <li class="site-navigation__item">Загрузка контента через CMS систему</li>
+                <li class="site-navigation__item site-navigation__color-dark" v-for="tool in project.tools">{{ tool }}</li>
               </ul>
             </div>
             <!-- site-navigation -->
           </div>
           <ul class="product-nav">
             <li class="product-nav__item">
-              <a href="https://ek.yanao.ru/" class="product-nav__link" target="blank">
-                <span class="product-nav__text">page</span>
-                <img class="product-nav__img" src="img/arrow.svg" alt="Arrow">
+              <a v-if="project.git" href="{{ project.git }}" class="product-nav__link" target="blank">
+                <span class="product-nav__text">git</span>
+                <img class="product-nav__img" src="../assets/img/arrow.svg" alt="Arrow">
               </a>
-
+              <a href="{{project.linkToProject }}" class="product-nav__link" target="blank">
+                <span class="product-nav__text">page</span>
+                <img class="product-nav__img" src="../assets/img/arrow.svg" alt="Arrow">
+              </a>
             </li>
 
           </ul>
@@ -46,10 +44,15 @@
     </section>
 </template>
 <script>
+import { useStore } from 'vuex'
 export default {
-  
+  setup() {
+    const store = useStore()
+
+    return {
+      projects: store.state.projects
+    }
+  }
+
 }
 </script>
-<style lang="">
-  
-</style>

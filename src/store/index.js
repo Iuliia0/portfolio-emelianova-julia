@@ -26,7 +26,8 @@ export default createStore({
 
     projects: [
       { 
-        type: 'commerce', 
+        id: 0,
+        type: 'коммерческий проект', 
         title: 'карта жителя Ямала', 
         tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
         tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
@@ -34,7 +35,8 @@ export default createStore({
         linkToProject: 'https://ek.yanao.ru/'
       },
       { 
-        type: 'commerce', 
+        id: 1,
+        type: 'коммерческий проект', 
         title: 'карта жителя Омска', 
         tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
         tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],

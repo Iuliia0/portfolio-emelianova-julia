@@ -9,6 +9,7 @@
 
 <script>
 import WorkPosition from '@/components/WorkPosition.vue';
+
 // @ is an alias to /src
 import Header from '../components/Header.vue';
 import Project from '@/components/Project.vue';

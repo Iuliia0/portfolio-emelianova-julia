@@ -376,9 +376,6 @@ button {
   .header-navigation__site-navigation {
     width: 70%;
   }
-  .site-navigation__item {
-    margin-left: 10px;
-  }
   .circle {
     margin-right: 10px;
   }
@@ -453,8 +450,5 @@ button {
   }
   .product-title {
     font-size: 1.7em;
-  }
-  .product__site-navigation {
-    height: 370px;
   }
 }/*# sourceMappingURL=style.css.map */
