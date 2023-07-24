@@ -318,7 +318,7 @@ button {
 .product__site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  gap: 20px;
 }
 .product-nav {
   display: flex;
@@ -350,6 +350,10 @@ button {
   background-color: #333333;
   border: none;
   margin: 0;
+}
+
+.site-navigation {
+  width: 50%;
 }
 
 .mobile-navigation {
@@ -389,14 +393,6 @@ button {
   }
   .product__title {
     font-size: 2.375em;
-  }
-  .product__site-navigation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .site-navigation {
-    margin-bottom: 20px;
   }
   .hidden-mobile {
     display: none;
@@ -447,6 +443,13 @@ button {
   }
   .product-title {
     font-size: 1.875em;
+  }
+  .product__site-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-navigation {
+    width: 100%;
   }
 }
 @media (max-width: 440px) {

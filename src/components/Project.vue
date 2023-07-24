@@ -7,7 +7,7 @@
           </h1>
           <div class="product__site-navigation">
             <div class="site-navigation">
-              <div class="circle hidden-mobile"></div>
+              <!-- <div class="circle circle__dark hidden-mobile"></div> -->
               <h4>Задачи</h4>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__color-dark" v-for="task in project.tasks">{{ task }}</li>
@@ -15,7 +15,7 @@
             </div>
             <!-- site-navigation -->
             <div class="site-navigation">
-              <div class="circle hidden-mobile"></div>
+              <!-- <div class="circle circle__dark hidden-mobile"></div> -->
               <h4>Инстурменты</h4>
               <ul class="site-navigation__list">
                 <li class="site-navigation__item site-navigation__color-dark" v-for="tool in project.tools">{{ tool }}</li>

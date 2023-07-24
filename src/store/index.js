@@ -28,20 +28,33 @@ export default createStore({
       { 
         id: 0,
         type: 'коммерческий проект', 
-        title: 'карта жителя Ямала', 
-        tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
-        tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
+        title: 'Единая карта жителя Петербурга', 
+        tasks: ['создание виджетов в Apostrophe CMS', 
+        'вёрстка страниц с использование виджетов', 
+        'адаптив виджетов и страниц под версия для слабовидящих, для мобильных устройств',
+        'создание компонентов на Vue'],
+        tools: ['HTML | Nunjucks', 'Apostrophe CMS', 'SASS | Tailwind', 'JavaScript', 'Vue 3 | Vuex | Vue Router'],
         git: null,
-        linkToProject: 'https://ek.yanao.ru/'
+        linkToProject: 'https://ekp.spb.ru/'
       },
+      // { 
+      //   id: 1,
+      //   type: 'коммерческий проект', 
+      //   title: 'карта жителя Омска', 
+      //   tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
+      //   tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
+      //   git: null,
+      //   linkToProject: 'https://ek.yanao.ru/'
+      // },
       { 
-        id: 1,
+        id: 2,
         type: 'коммерческий проект', 
-        title: 'карта жителя Омска', 
-        tasks: ['вёрстка сайта', 'адаптив', 'реализовать версию для слабовидящих'],
-        tools: ['HTML | CSS', 'JavaScript', 'Загрузка контента через CMS систему'],
+        title: 'Детское питание', 
+        tasks: ['вёрстка сайта с нуля', 
+        'адаптив для мобильных устройств'],
+        tools: ['HTML | CSS', 'JavaScript'],
         git: null,
-        linkToProject: 'https://ek.yanao.ru/'
+        linkToProject: 'https://mam-shop.ru/'
       },
     ],
 
