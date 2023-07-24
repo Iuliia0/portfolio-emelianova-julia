@@ -1,11 +1,22 @@
-# Портфолио Емельяновой Юлии
+# portfolio-emelianova-julia
 
-### https://iuliia0.github.io/portfolio-emelianova-julia/
+## Project setup
+```
+npm install
+```
 
-## Junior Fronted-разработчик
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Навыки:
+### Compiles and minifies for production
+```
+npm run build
+```
 
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 - HTML | CSS | SASS | SCSS
 - Flexbox | Grid | Pixel Perfect
 - JavaScript | JSON | AJAX | React
