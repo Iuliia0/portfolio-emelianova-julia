@@ -1,4 +1,15 @@
-# portfolio-emelianova-julia
+# Портфолио Емельянова Юлия
+
+https://iuliia0.github.io/portfolio-emelianova-julia/
+
+### Навыки
+HTML | БЭМ
+CSS | SASS | SCSS
+JavaScript
+Vue, Vuex, Vue Router
+Nunjucks
+CMS Apostrophe
+
 
 ## Project setup
 ```
@@ -14,15 +25,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-- HTML | CSS | SASS | SCSS
-- Flexbox | Grid | Pixel Perfect
-- JavaScript | JSON | AJAX | React
-- Англискй pre-intermediate | Немецкий В1
-- HTTP-методы
-- Figma, Ps
-- Webpack
-- БЭМ
-- Git
